@@ -4,16 +4,11 @@
 }
 
 div.container div {
-  background-color: chocolate;
-}
-
-div.container div:nth-child(even) {
-  background-color: grey;
+  background-color: #f03f0d;
 }
 
 div {
   border: 1px solid black;
-  text-align: center;
 }
 
 .container .header {
@@ -36,10 +31,88 @@ div {
 }
 
 .container {
+  box-sizing: border-box;
   width: 100vw;
   margin: auto;
   display: grid;
-  grid-template-columns: 17.5% 65% 17.6%;
+  grid-template-columns: 15% 70% 15%;
   gap: 2px;
   grid-template-areas: "header header header" "jumbotron jumbotron jumbotron" "leftBlankSide main rightBlankSide" "footer footer footer";
+}
+
+nav {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav ul {
+  list-style: none;
+  font-family: sans-serif;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav img.gambarHeader {
+  width: 200px;
+  align-self: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav ul a {
+  display: inline-block;
+  padding: 0.3em;
+  font-size: 1.2em;
+  color: white;
+}
+nav ul a:hover {
+  background-color: brown;
+}
+nav ul a:hover div.arrow {
+  background-color: brown;
+}
+nav ul li {
+  margin-left: 10px;
+}
+nav ul li.bundle {
+  position: relative;
+}
+nav ul li.bundle .arrow {
+  margin-left: 5px;
+  display: inline-block;
+  border-top: 10px solid white;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+nav ul li.bundle ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: none;
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: #f03f0d;
+}
+nav ul li.bundle ul li {
+  width: 100%;
+}
+nav ul li.bundle ul li a {
+  background-color: #f03f0d;
+  width: 100%;
+}
+nav ul li.bundle ul li a:hover {
+  background-color: brown;
+}
+nav li.bundle:hover ul {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */

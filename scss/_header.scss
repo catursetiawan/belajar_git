@@ -1,0 +1,78 @@
+@mixin setNavList(){
+    ul{
+        list-style: none;
+        font-family: sans-serif;
+        a{
+            text-decoration: none;
+        } 
+    }
+}
+@mixin setFlex($arah: row, $rataSamping: center, $rataAtas: center){
+    display: flex;
+    flex-direction: $arah;
+    justify-content: $rataSamping;
+    align-items: $rataAtas;
+}
+
+nav{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 70%;
+    margin: auto;
+    @include setNavList();
+    @include setFlex(row, space-between, flex-end);
+    img.gambarHeader{
+        width: 200px;
+        align-self: center;
+    }
+    ul{
+     @include setFlex(row, center, center);
+     a{
+        display: inline-block;
+        padding: 0.3em;
+        font-size: 1.2em;
+        color: white;
+        &:hover{
+            background-color: brown;
+            div.arrow{
+                background-color: brown;
+            }
+        }
+     }
+     li{
+        margin-left: 10px;
+     }
+     li.bundle{
+        position: relative;
+        .arrow{
+            margin-left: 5px;
+            display: inline-block;
+            border-top: 10px solid white;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+        }
+        ul{
+            @include setFlex(column, flex-start, flex-start);
+            display: none;
+            position: absolute;
+            width: max-content;
+            background-color: $warnaUtama;
+            li{
+                width: 100%;
+                a{
+                    background-color: $warnaUtama;
+                    width: 100%;
+                    &:hover{
+                        background-color: brown;
+                    }
+                }
+            }
+        }
+     }   
+    }
+    li.bundle:hover{
+        ul{
+            display: flex;
+        }
+    }
+}

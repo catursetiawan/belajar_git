@@ -2,15 +2,14 @@
     margin: 0;
     padding: 0;
 }
+$warnaUtama: #f03f0d; 
+
+
 div.container div{
-    background-color: chocolate;
-}
-div.container div:nth-child(even){
-    background-color: grey;
+    background-color: $warnaUtama;
 }
 div{
     border: 1px solid black;
-    text-align: center;
 }
 .container{
     .header{
@@ -33,10 +32,11 @@ div{
     }
 }
 .container{
+    box-sizing: border-box;
     width: 100vw;
     margin: auto;
     display: grid;
-    grid-template-columns: 17.5% 65% 17.6%;
+    grid-template-columns: 15% 70% 15%;
     gap: 2px;
     grid-template-areas: 
     'header header header'
@@ -44,3 +44,6 @@ div{
     'leftBlankSide main rightBlankSide'
     'footer footer footer';
 }
+
+// ===========================================================================
+@import 'header';
