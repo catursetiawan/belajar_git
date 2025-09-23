@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.container div {
+  background-color: chocolate;
+}
+
+div.container div:nth-child(even) {
+  background-color: grey;
+}
+
+div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.container .header {
+  grid-area: header;
+}
+.container .jumbotron {
+  grid-area: jumbotron;
+}
+.container .leftBlankSide {
+  grid-area: leftBlankSide;
+}
+.container .main {
+  grid-area: main;
+}
+.container .rightBlankSide {
+  grid-area: rightBlankSide;
+}
+.container .footer {
+  grid-area: footer;
+}
+
+.container {
+  width: 100vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 17.5% 65% 17.6%;
+  gap: 2px;
+  grid-template-areas: "header header header" "jumbotron jumbotron jumbotron" "leftBlankSide main rightBlankSide" "footer footer footer";
+}/*# sourceMappingURL=index.css.map */
