@@ -41,7 +41,12 @@
     .main-main{
         height: 1000px;
         grid-area: main-main;
-
+        .boxArtikel{
+            display: inline-block;
+            width: 30%;
+            height: 300px;
+            background-color: blue($color: #000000);
+        }
     }
     // ================
     .mainSidebar{

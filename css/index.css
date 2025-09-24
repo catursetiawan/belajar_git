@@ -287,6 +287,13 @@ nav li.bundle:hover ul {
   grid-area: main-main;
 }
 
+.container .main .main-main .boxArtikel {
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+  background-color: 0;
+}
+
 .container .main .mainSidebar {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
