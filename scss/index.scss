@@ -3,7 +3,9 @@
     padding: 0;
 }
 $warnaUtama: #f03f0d; 
-
+.container .BlankSide{
+    background-color: transparent;
+}
 
 div.container div{
     background-color: $warnaUtama;
@@ -48,3 +50,4 @@ div{
 // ===========================================================================
 @import 'header';
 @import 'jumbotron';
+@import 'main';
