@@ -13,7 +13,9 @@
     justify-content: $rataSamping;
     align-items: $rataAtas;
 }
-
+.header{
+    background-color: $warnaUtama;
+}
 nav{
     position: relative;
     z-index: 1000;
