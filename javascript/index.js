@@ -6,7 +6,12 @@ let artikel=[
     },
     {
         judul: 'judul_2',
-        srcGambar: 'gambar/artikel1.png',
+        srcGambar: 'gambar/artikel2.png',
+        textArtikel: '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at modi dolorum cumque soluta. Dignissimos, eligendi? Ex nemo tenetur magni consequatur, ut, soluta eius quibusdam eaque, voluptatem cumque culpa? Perferendis?</p>'
+    },
+    {
+        judul: 'judul_3',
+        srcGambar: 'gambar/artikel3.png',
         textArtikel: '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at modi dolorum cumque soluta. Dignissimos, eligendi? Ex nemo tenetur magni consequatur, ut, soluta eius quibusdam eaque, voluptatem cumque culpa? Perferendis?</p>'
     }
 ]
