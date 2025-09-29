@@ -29,13 +29,39 @@ function tambahBoxArtikel(){
         let boxGambar = document.createElement("div");
         boxArtikel[i].appendChild(boxGambar).classList.add('boxGambar');
     }
+
+    for(let i=0; i<artikel.length; i++){
+        let boxGambar = document.querySelectorAll('.boxArtikel .boxGambar');
+        let gambar = document.createElement('img');
+        boxGambar[i].appendChild(gambar);
+    }
     
     for(let i=0; i<artikel.length; i++){
         let boxArtikel = document.querySelectorAll(".main-main .boxArtikel");
         let a = document.createElement('a');
         boxArtikel[i].appendChild(a);
     }
+
+    for(let i=0; i<artikel.length; i++){
+        let a = document.querySelectorAll('.main-main .boxArtikel a');
+        a[i].innerHTML=artikel[i].judul;
+    }
+
+
+    // ================<PENAMBAHAN ATRIBUTE>====================
+    for(let i=0; i<artikel.length; i++){
+        let img = document.querySelectorAll('.boxArtikel .boxGambar img');
+        img[i].setAttribute('src', artikel[i].srcGambar);
+    }
+
+    for(let i=0; i<artikel.length; i++){
+        let a = document.querySelectorAll('.boxArtikel a');
+        a[i].setAttribute('href', '#')
+    }
 }
 
 tambahBoxArtikel();
 // let main_main=document.getElementsByClassName('main-main');
+
+
+        let boxGambar = document.querySelectorAll('.boxArtikel .boxGambar');
