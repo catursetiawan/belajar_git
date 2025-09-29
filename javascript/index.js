@@ -15,3 +15,27 @@ let artikel=[
         textArtikel: '<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum at modi dolorum cumque soluta. Dignissimos, eligendi? Ex nemo tenetur magni consequatur, ut, soluta eius quibusdam eaque, voluptatem cumque culpa? Perferendis?</p>'
     }
 ]
+
+function tambahBoxArtikel(){
+    
+    for(let i=0; i<artikel.length;i++){
+        let main_main=document.querySelectorAll(".main-main");
+        let boxArtikel = document.createElement("div");
+        main_main[0].appendChild(boxArtikel).classList.add("boxArtikel");
+    }
+
+    for(let i=0; i<artikel.length; i++){
+        let boxArtikel = document.querySelectorAll(".main-main .boxArtikel");
+        let boxGambar = document.createElement("div");
+        boxArtikel[i].appendChild(boxGambar).classList.add('boxGambar');
+    }
+    
+    for(let i=0; i<artikel.length; i++){
+        let boxArtikel = document.querySelectorAll(".main-main .boxArtikel");
+        let a = document.createElement('a');
+        boxArtikel[i].appendChild(a);
+    }
+}
+
+tambahBoxArtikel();
+// let main_main=document.getElementsByClassName('main-main');
