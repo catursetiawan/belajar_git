@@ -1,0 +1,36 @@
+.footer{
+    background-color: $warnaUtama;
+    display: flex;
+    flex-direction: column;
+
+    .subFooter{
+        // background-color: green;
+        width: 80%;
+        margin: 30px;
+        margin: auto;
+        text-align: center;
+        .sosmedAndGambar a.sosmed img{
+            width: 20px;
+        }
+        &:nth-child(1){
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        &:nth-child(2){
+            margin-top: 30px;
+        }
+        .textFooter{
+            margin: auto;
+            width: 50%;
+        }
+
+
+        .sosmedAndGambar{
+            display: inline-block;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}
